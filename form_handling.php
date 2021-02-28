@@ -1,16 +1,3 @@
-<?php
-if(isset( $_POST['fullName']) && isset( $_POST['email'])  && isset( $_POST['phone']) && isset( $_POST['address'])){
-    $fullName = $_POST['fullName'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    echo $fullName;
-    echo $email;
-    echo $phone;
-    echo $address;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,3 +20,16 @@ if(isset( $_POST['fullName']) && isset( $_POST['email'])  && isset( $_POST['phon
     </div>
 </body>
 </html>
+
+<?php
+if(isset( $_POST['fullName']) && isset( $_POST['email'])  && isset( $_POST['phone']) && isset( $_POST['address'])){
+    $fullName = $_POST['fullName'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    echo ("My full Name is: " . $fullName . "<br>");
+    echo ("My email address is: " . $email . "<br>");
+    echo ("My Phone Number is: " . $phone . "<br>");
+    echo ("My House Address is: " . $address . "<br>");
+}
+?>
